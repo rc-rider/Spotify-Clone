@@ -86,7 +86,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
             );
           }
 
-          return product.prices.map((price) => (
+          return product.prices.map((price: Price) => (
             <Button 
               key={price.id} 
               onClick={() => handleCheckout(price)}
